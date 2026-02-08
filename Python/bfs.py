@@ -1,3 +1,4 @@
+# Breadth-First Search (BFS) implementation in Python
 from collections import deque
 
 def bfs(connected_items, start):

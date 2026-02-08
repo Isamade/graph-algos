@@ -1,3 +1,5 @@
+# Depth-First Search (DFS) implementation in Python
+
 def dfs(connected_items, current, visited=None, order=None):
     if visited is None:
         visited = set()
