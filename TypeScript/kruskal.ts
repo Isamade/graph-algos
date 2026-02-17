@@ -35,12 +35,12 @@ class UnionFind {
     }
 }
 
-type Edge = [number, number, number];
+type Edge3 = [number, number, number];
 
-function kruskal(n: number, edges: Edge[]): { mst: Edge[], totalWeight: number } {
+function kruskal(n: number, edges: Edge3[]): { mst: Edge3[], totalWeight: number } {
     // Sort edges based on weight (index 2)
     const sortedEdges = [...edges].sort((a, b) => a[2] - b[2]);
-    const mst: Edge[] = [];
+    const mst: Edge3[] = [];
     let totalWeight = 0;
 
     const uf = new UnionFind(n);
@@ -59,7 +59,7 @@ function kruskal(n: number, edges: Edge[]): { mst: Edge[], totalWeight: number }
 }
 
 // Example usage
-const edges: Edge[] = [
+const edges2: Edge3[] = [
     [0, 1, 10],
     [0, 2, 6],
     [0, 3, 5],
@@ -68,7 +68,7 @@ const edges: Edge[] = [
 ];
 const n = 4;
 
-const { mst, totalWeight } = kruskal(n, edges);
+const { mst, totalWeight } = kruskal(n, edges2);
 
 console.log("Edges in the Minimum Spanning Tree:", mst);
 console.log("Total weight of the Minimum Spanning Tree:", totalWeight);

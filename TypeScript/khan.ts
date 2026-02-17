@@ -42,7 +42,7 @@ function topologicalSortKahn(graph: Record<string, string[]>): string[] {
 }
 
 // Example usage
-const graph2: Record<string, string[]> = {
+const graph5: Record<string, string[]> = {
     'A': ['B', 'C'],
     'B': ['D'],
     'C': ['D'],
@@ -50,7 +50,7 @@ const graph2: Record<string, string[]> = {
 };
 
 try {
-    const order = topologicalSortKahn(graph2);
+    const order = topologicalSortKahn(graph5);
     console.log("Topological Sort Order:", order);
 } catch (e) {
     if (e instanceof Error) {

@@ -1,4 +1,4 @@
-class Graph {
+class Graph2 {
     private V: number;
     private graph: Map<number, number[]>;
 
@@ -26,8 +26,8 @@ class Graph {
         stack.push(v);
     }
 
-    private transpose(): Graph {
-        const transposedGraph = new Graph(this.V);
+    private transpose(): Graph2 {
+        const transposedGraph = new Graph2(this.V);
         for (const [node, neighbors] of this.graph.entries()) {
             for (const neighbor of neighbors) {
                 transposedGraph.addEdge(neighbor, node);
@@ -79,7 +79,7 @@ class Graph {
 }
 
 // Example usage
-const g = new Graph(5);
+const g = new Graph2(5);
 g.addEdge(1, 0);
 g.addEdge(0, 2);
 g.addEdge(2, 1);

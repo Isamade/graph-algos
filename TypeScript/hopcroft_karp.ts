@@ -84,11 +84,11 @@ function hopcroftKarp(graph: number[][]): number {
 }
 
 // Example usage:
-const graph = [
+const graph4 = [
   [1, 2],    // Node 0 connects to 1, 2
   [0, 3],    // Node 1 connects to 0, 3
   [1, 3],    // Node 2 connects to 1, 3
   [0, 2]     // Node 3 connects to 0, 2
 ];
 
-console.log("Maximum Matching:", hopcroftKarp(graph));
+console.log("Maximum Matching:", hopcroftKarp(graph4));

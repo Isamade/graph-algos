@@ -23,14 +23,14 @@ function floydWarshall(graph: number[][]): number[][] {
 
 // Example usage
 const inf = Infinity;
-const graph: number[][] = [
+const graph3: number[][] = [
     [0, 3, inf, inf],
     [inf, 0, 1, inf],
     [inf, inf, 0, 7],
     [inf, inf, inf, 0]
 ];
 
-const shortestPaths2 = floydWarshall(graph);
+const shortestPaths2 = floydWarshall(graph3);
 
 console.log("Shortest path matrix:");
 shortestPaths2.forEach(row => console.log(row));
